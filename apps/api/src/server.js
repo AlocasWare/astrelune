@@ -38,7 +38,7 @@ const app = createApiApp({
   authenticationService,
   authenticateRequest,
 });
-const port = Number(process.env.API_PORT ?? 4000);
+const port = Number(process.env.PORT ?? process.env.API_PORT ?? 4000);
 const server = app.listen(port, () => process.stdout.write(`Astrelune API listening on ${port}\n`));
 
 function shutdown() {
