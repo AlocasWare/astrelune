@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      prisma:
+        specifier: 6.19.3
+        version: 6.19.3(typescript@5.9.3)
     devDependencies:
       '@eslint/js':
         specifier: ^10.0.1
@@ -35,9 +39,6 @@ importers:
       prettier:
         specifier: ^3.9.10
         version: 3.9.10
-      prisma:
-        specifier: 6.19.3
-        version: 6.19.3(typescript@5.9.3)
       tailwindcss:
         specifier: ^4.3.3
         version: 4.3.3
