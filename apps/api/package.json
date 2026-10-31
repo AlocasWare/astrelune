@@ -1,0 +1,15 @@
+{
+  "name": "@astrelune/api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "@astrelune/validation": "workspace:1.0.0",
+    "@prisma/client": "6.19.3",
+    "argon2": "^0.45.1",
+    "express": "5.1.0"
+  }
+}

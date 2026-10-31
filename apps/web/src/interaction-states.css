@@ -1,0 +1,90 @@
+button,
+a,
+input {
+  transition:
+    background-color 140ms ease,
+    color 140ms ease,
+    border-color 140ms ease,
+    box-shadow 140ms ease;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid #9479b3;
+  outline-offset: 2px;
+}
+
+.icon-button {
+  min-width: 30px;
+  min-height: 30px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 6px;
+}
+
+.icon-button:hover {
+  background: #eeebf1;
+  color: #5d4c70;
+}
+
+.sidebar .icon-button:hover {
+  background: #41404e;
+  color: #f1eafa;
+}
+
+.profile-button:hover {
+  background: #c9b5e3;
+  color: #382d4b;
+  box-shadow: 0 0 0 3px #d8c8ed66;
+}
+
+.format-toolbar button:hover {
+  background: #e9e3ef;
+  color: #57456d;
+}
+
+.format-toolbar button:focus-visible,
+.icon-button:focus-visible,
+.profile-button:focus-visible {
+  outline-color: #8668a8;
+}
+
+.share-button:hover {
+  border-color: #cfc3dc;
+  background: #f7f4fa;
+  color: #58466e;
+}
+
+.focus-button:hover,
+.add-chapter:hover,
+.goal-edit:hover,
+.new-book:hover {
+  color: #57456d;
+}
+
+.focus-button:hover,
+.new-book:hover {
+  background: #efedf1;
+  border-radius: 5px;
+}
+
+.chapter-row:hover {
+  background: #eeecef;
+}
+
+.chapter-row.active:hover {
+  background: #e5e0e9;
+}
+
+.chapter-row:focus-visible .row-dots {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button,
+  a,
+  input {
+    transition: none;
+  }
+}

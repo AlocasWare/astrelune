@@ -1,0 +1,27 @@
+{
+  "name": "@astrelune/web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@astrelune/validation": "workspace:1.0.0",
+    "@tiptap/extension-link": "^3.32.2",
+    "@tiptap/extension-underline": "^3.32.2",
+    "@tiptap/react": "^3.32.2",
+    "@tiptap/starter-kit": "^3.32.2",
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.16",
+    "@types/react-dom": "19.1.9",
+    "@vitejs/plugin-react": "5.0.4",
+    "lightningcss": "^1.33.0",
+    "typescript": "5.9.3",
+    "vite": "7.1.12"
+  }
+}
