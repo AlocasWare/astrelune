@@ -14,6 +14,20 @@ export default defineConfig({
       "@astrelune/validation": path.resolve(rootDir, "../../packages/validation/src/index.ts"),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          tiptap: [
+            "@tiptap/react",
+            "@tiptap/starter-kit",
+            "@tiptap/extension-link",
+            "@tiptap/extension-underline",
+          ],
+        },
+      },
+    },
+  },
   server: {
     host: "0.0.0.0",
     port: 5174,
